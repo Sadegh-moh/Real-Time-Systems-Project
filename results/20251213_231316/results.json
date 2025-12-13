@@ -1,0 +1,83 @@
+{
+  "config": {
+    "seed": 0,
+    "train": {
+      "episodes": 360,
+      "n_tasks": 120,
+      "horizon": 600,
+      "seed": 0,
+      "taskgen": {
+        "interarrival_mean": 5.0,
+        "base_exec_min": 2,
+        "base_exec_max": 20,
+        "big_speedup": 1.7,
+        "little_slowdown": 1.0,
+        "deadline_slack_min": 1.5,
+        "deadline_slack_max": 4.0
+      },
+      "lr": 0.001,
+      "gamma": 0.9,
+      "batch_size": 128,
+      "buffer_capacity": 200000,
+      "target_update": 500,
+      "epsilon_start": 1.0,
+      "epsilon_end": 0.05,
+      "epsilon_decay_steps": 80000,
+      "warmup_steps": 5000,
+      "max_steps_per_episode": 2000,
+      "meet_bonus": 1.0,
+      "miss_penalty": 2.0,
+      "energy_weight": 0.04
+    },
+    "test": {
+      "n_tasks": 160,
+      "horizon": 600,
+      "seed": 0,
+      "taskgen": {
+        "interarrival_mean": 5.0,
+        "base_exec_min": 2,
+        "base_exec_max": 20,
+        "big_speedup": 1.7,
+        "little_slowdown": 1.0,
+        "deadline_slack_min": 1.5,
+        "deadline_slack_max": 4.0
+      }
+    }
+  },
+  "random": {
+    "total_reward": -230.68800000000016,
+    "steps": 160,
+    "metrics": {
+      "big": {
+        "completed": 73,
+        "met": 54,
+        "qos": 0.7397260273972602,
+        "energy": 1743.1999999999844
+      },
+      "little": {
+        "completed": 87,
+        "met": 14,
+        "qos": 0.16091954022988506,
+        "energy": 1124.0000000000198
+      }
+    }
+  },
+  "double_dqn": {
+    "total_reward": -97.45599999999948,
+    "steps": 160,
+    "metrics": {
+      "big": {
+        "completed": 82,
+        "met": 70,
+        "qos": 0.8536585365853658,
+        "energy": 1926.4999999999693
+      },
+      "little": {
+        "completed": 78,
+        "met": 44,
+        "qos": 0.5641025641025641,
+        "energy": 1059.9000000000174
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+=== Random ===
+total_reward: -230.688
+steps(decisions): 160
+big   : completed=  73 met=  54 qos=0.740 energy=1743.20
+little: completed=  87 met=  14 qos=0.161 energy=1124.00
+
+=== Double DQN ===
+total_reward: -97.456
+steps(decisions): 160
+big   : completed=  82 met=  70 qos=0.854 energy=1926.50
+little: completed=  78 met=  44 qos=0.564 energy=1059.90
